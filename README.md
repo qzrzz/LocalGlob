@@ -11,9 +11,9 @@ A high-performance glob library that automatically switches between `Bun.Glob` (
 ## Installation
 
 ```bash
-npm install localglob
+npm install local-glob
 # or
-bun add localglob
+bun add local-glob
 ```
 
 ## Usage
@@ -21,7 +21,7 @@ bun add localglob
 ### Asynchronous
 
 ```ts
-import { glob } from "localglob"
+import { glob } from "local-glob"
 
 const files = await glob("**/*.ts", { cwd: "./src" })
 console.log(files)
@@ -30,7 +30,7 @@ console.log(files)
 ### Synchronous
 
 ```ts
-import { globSync } from "localglob"
+import { globSync } from "local-glob"
 
 const files = globSync("**/*.ts", { cwd: "./src" })
 console.log(files)

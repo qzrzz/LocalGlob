@@ -11,9 +11,9 @@
 ## 安装
 
 ```bash
-npm install localglob
+npm install local-glob
 # 或
-bun add localglob
+bun add local-glob
 ```
 
 ## 使用方法
@@ -21,7 +21,7 @@ bun add localglob
 ### 异步 (Asynchronous)
 
 ```ts
-import { glob } from "localglob"
+import { glob } from "local-glob"
 
 const files = await glob("**/*.ts", { cwd: "./src" })
 console.log(files)
