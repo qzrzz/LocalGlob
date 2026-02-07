@@ -1,7 +1,7 @@
 {
     "name": "local-glob",
-    "version": "1.0.0",
-    "module": "src/index.ts",
+    "version": "1.0.",
+    "module": "dist/index.js",
     "type": "module",
     "scripts": {
         "dev": "rslib build  --config ./build/rslib.config.ts --watch",
@@ -29,6 +29,12 @@
     "peerDependencies": {
         "typescript": "^5"
     },
+    "files": [
+        "dist",
+        "src",
+        "README.md",
+        "tsconfig.json"
+    ],
     "publishConfig": {
         "registry": "https://registry.npmjs.org/"
     },
